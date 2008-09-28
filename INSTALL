@@ -1,0 +1,12 @@
+1. Compiling tarfs
+
+% tar xvzf tarfs-xxx.tar.gz
+% cd $(tarfs-dir)
+% make all
+
+2. Using tarfs
+
+# cd $(tarfs-dir)/src
+# insmod tarfs.o
+# losetup /dev/loop0 your-tar-file.tar
+# mount -t tarfs /dev/loop0 your-mount-point
